@@ -17,6 +17,10 @@
 		C53EE19114DB7595003207CA /* SCDBDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C53EE19014DB7595003207CA /* SCDBDetailViewController.m */; };
 		C53EE19414DB7595003207CA /* SCDBMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C53EE19214DB7595003207CA /* SCDBMasterViewController.xib */; };
 		C53EE19714DB7595003207CA /* SCDBDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C53EE19514DB7595003207CA /* SCDBDetailViewController.xib */; };
+		C53EE1A514DB80DB003207CA /* SCDBClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C53EE1A414DB80DB003207CA /* SCDBClass.m */; };
+		C53EE1A714DB839A003207CA /* simpleclasses.db in Resources */ = {isa = PBXBuildFile; fileRef = C53EE1A614DB839A003207CA /* simpleclasses.db */; };
+		C53EE1AA14DB83D1003207CA /* DBAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = C53EE1A914DB83D1003207CA /* DBAccess.m */; };
+		C53EE1AC14DB930E003207CA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C53EE1AB14DB930E003207CA /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,18 +28,24 @@
 		C53EE17A14DB7594003207CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C53EE17C14DB7594003207CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C53EE17E14DB7594003207CA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C53EE18214DB7594003207CA /* SimpleClassDB-Info.plist */ = {isa = PBXFileReference; path = "SimpleClassDB-Info.plist"; sourceTree = "<group>"; };
+		C53EE18214DB7594003207CA /* SimpleClassDB-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleClassDB-Info.plist"; sourceTree = "<group>"; };
 		C53EE18414DB7594003207CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C53EE18614DB7594003207CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C53EE18814DB7594003207CA /* SimpleClassDB-Prefix.pch */ = {isa = PBXFileReference; path = "SimpleClassDB-Prefix.pch"; sourceTree = "<group>"; };
-		C53EE18914DB7594003207CA /* SCDBAppDelegate.h */ = {isa = PBXFileReference; path = SCDBAppDelegate.h; sourceTree = "<group>"; };
+		C53EE18814DB7594003207CA /* SimpleClassDB-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleClassDB-Prefix.pch"; sourceTree = "<group>"; };
+		C53EE18914DB7594003207CA /* SCDBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCDBAppDelegate.h; sourceTree = "<group>"; };
 		C53EE18A14DB7594003207CA /* SCDBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCDBAppDelegate.m; sourceTree = "<group>"; };
-		C53EE18C14DB7594003207CA /* SCDBMasterViewController.h */ = {isa = PBXFileReference; path = SCDBMasterViewController.h; sourceTree = "<group>"; };
+		C53EE18C14DB7594003207CA /* SCDBMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCDBMasterViewController.h; sourceTree = "<group>"; };
 		C53EE18D14DB7594003207CA /* SCDBMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCDBMasterViewController.m; sourceTree = "<group>"; };
-		C53EE18F14DB7594003207CA /* SCDBDetailViewController.h */ = {isa = PBXFileReference; path = SCDBDetailViewController.h; sourceTree = "<group>"; };
+		C53EE18F14DB7594003207CA /* SCDBDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCDBDetailViewController.h; sourceTree = "<group>"; };
 		C53EE19014DB7595003207CA /* SCDBDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCDBDetailViewController.m; sourceTree = "<group>"; };
 		C53EE19314DB7595003207CA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SCDBMasterViewController.xib; sourceTree = "<group>"; };
 		C53EE19614DB7595003207CA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SCDBDetailViewController.xib; sourceTree = "<group>"; };
+		C53EE1A314DB80DB003207CA /* SCDBClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCDBClass.h; sourceTree = "<group>"; };
+		C53EE1A414DB80DB003207CA /* SCDBClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCDBClass.m; sourceTree = "<group>"; };
+		C53EE1A614DB839A003207CA /* simpleclasses.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = simpleclasses.db; sourceTree = "<group>"; };
+		C53EE1A814DB83D1003207CA /* DBAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBAccess.h; sourceTree = "<group>"; };
+		C53EE1A914DB83D1003207CA /* DBAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBAccess.m; sourceTree = "<group>"; };
+		C53EE1AB14DB930E003207CA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C53EE1AC14DB930E003207CA /* libsqlite3.dylib in Frameworks */,
 				C53EE17B14DB7594003207CA /* UIKit.framework in Frameworks */,
 				C53EE17D14DB7594003207CA /* Foundation.framework in Frameworks */,
 				C53EE17F14DB7594003207CA /* CoreGraphics.framework in Frameworks */,
@@ -55,6 +66,7 @@
 		C53EE16B14DB7594003207CA = {
 			isa = PBXGroup;
 			children = (
+				C53EE1AB14DB930E003207CA /* libsqlite3.dylib */,
 				C53EE18014DB7594003207CA /* SimpleClassDB */,
 				C53EE17914DB7594003207CA /* Frameworks */,
 				C53EE17714DB7594003207CA /* Products */,
@@ -91,6 +103,10 @@
 				C53EE19214DB7595003207CA /* SCDBMasterViewController.xib */,
 				C53EE19514DB7595003207CA /* SCDBDetailViewController.xib */,
 				C53EE18114DB7594003207CA /* Supporting Files */,
+				C53EE1A314DB80DB003207CA /* SCDBClass.h */,
+				C53EE1A414DB80DB003207CA /* SCDBClass.m */,
+				C53EE1A814DB83D1003207CA /* DBAccess.h */,
+				C53EE1A914DB83D1003207CA /* DBAccess.m */,
 			);
 			path = SimpleClassDB;
 			sourceTree = "<group>";
@@ -98,6 +114,7 @@
 		C53EE18114DB7594003207CA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C53EE1A614DB839A003207CA /* simpleclasses.db */,
 				C53EE18214DB7594003207CA /* SimpleClassDB-Info.plist */,
 				C53EE18314DB7594003207CA /* InfoPlist.strings */,
 				C53EE18614DB7594003207CA /* main.m */,
@@ -159,6 +176,7 @@
 				C53EE18514DB7594003207CA /* InfoPlist.strings in Resources */,
 				C53EE19414DB7595003207CA /* SCDBMasterViewController.xib in Resources */,
 				C53EE19714DB7595003207CA /* SCDBDetailViewController.xib in Resources */,
+				C53EE1A714DB839A003207CA /* simpleclasses.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +191,8 @@
 				C53EE18B14DB7594003207CA /* SCDBAppDelegate.m in Sources */,
 				C53EE18E14DB7594003207CA /* SCDBMasterViewController.m in Sources */,
 				C53EE19114DB7595003207CA /* SCDBDetailViewController.m in Sources */,
+				C53EE1A514DB80DB003207CA /* SCDBClass.m in Sources */,
+				C53EE1AA14DB83D1003207CA /* DBAccess.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

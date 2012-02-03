@@ -8,10 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+#import "SCDBClass.h"
+#import "DBAccess.h"
+#import "SCDBDetailViewController.h"
+
 @class SCDBDetailViewController;
 
 @interface SCDBMasterViewController : UITableViewController
-
+{
+    NSMutableArray *classes;
+}
+@property (retain, nonatomic) NSMutableArray* classes;
 @property (strong, nonatomic) SCDBDetailViewController *detailViewController;
 
 @end

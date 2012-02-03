@@ -14,7 +14,10 @@
 
 @implementation SCDBDetailViewController
 
+@synthesize nameLabel = _nameLabel;
+@synthesize buildingLabel = _buildingLabel;
 @synthesize detailItem = _detailItem;
+@synthesize roomLabel = _roomLabel;
 @synthesize detailDescriptionLabel = _detailDescriptionLabel;
 
 #pragma mark - Managing the detail item
@@ -29,6 +32,12 @@
     }
 }
 
+-(void) setLabelsForProduct: (SCDBClass*) theClass
+{
+    [_nameLabel setText:theClass.name];
+    [_buildingLabel setText:theClass.building];
+    [_roomLabel setText:theClass.details];
+}
 - (void)configureView
 {
     // Update the user interface for the detail item.
@@ -55,6 +64,9 @@
 
 - (void)viewDidUnload
 {
+    [self setNameLabel:nil];
+    [self setBuildingLabel:nil];
+    [self setRoomLabel:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;

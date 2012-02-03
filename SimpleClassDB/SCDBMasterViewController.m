@@ -12,6 +12,8 @@
 
 @implementation SCDBMasterViewController
 
+@synthesize classes;
+
 @synthesize detailViewController = _detailViewController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -35,6 +37,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    DBAccess *dbAccess = [[DBAccess alloc] init];
+    
+    self.classes = [dbAccess getAllClasses];
+    
+    [dbAccess closeDatabase];
+    
+    //[dbAccess release];
+    
 }
 
 - (void)viewDidUnload
@@ -78,7 +89,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    return [self.classes count];
 }
 
 // Customize the appearance of table view cells.
@@ -93,7 +104,11 @@
     }
 
     // Configure the cell.
-    cell.textLabel.text = NSLocalizedString(@"Detail", @"Detail");
+   // cell.textLabel.text = NSLocalizedString(@"Detail", @"Detail");
+    
+    SCDBClass* myClass = [self.classes objectAtIndex:[indexPath row]];
+    
+    cell.textLabel.text = myClass.name;
     return cell;
 }
 
@@ -137,10 +152,25 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (!self.detailViewController) {
-        self.detailViewController = [[SCDBDetailViewController alloc] initWithNibName:@"SCDBDetailViewController" bundle:nil];
-    }
-    [self.navigationController pushViewController:self.detailViewController animated:YES];
+    
+    //if (!self.detailViewController) {
+    //    self.detailViewController = [[SCDBDetailViewController alloc] initWithNibName:@"SCDBDetailViewController" bundle:nil];
+    //}
+    //[self.navigationController pushViewController:self.detailViewController animated:YES];
+    
+    SCDBClass* myClass = [self.classes objectAtIndex:[indexPath row]];
+    
+    SCDBDetailViewController *classDetailViewController = [[SCDBDetailViewController alloc] initWithNibName:@"SCDBDetailViewController" bundle:nil];
+   // [SCDBDetailViewController setTitle:myClass.name];
+    
+    [self.navigationController pushViewController: classDetailViewController animated:YES];
+    
+    [classDetailViewController setLabelsForProduct:myClass];
+    
+    
+    
+    
+
 }
 
 @end
