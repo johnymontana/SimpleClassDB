@@ -18,9 +18,9 @@
 		C53EE19414DB7595003207CA /* SCDBMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C53EE19214DB7595003207CA /* SCDBMasterViewController.xib */; };
 		C53EE19714DB7595003207CA /* SCDBDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C53EE19514DB7595003207CA /* SCDBDetailViewController.xib */; };
 		C53EE1A514DB80DB003207CA /* SCDBClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C53EE1A414DB80DB003207CA /* SCDBClass.m */; };
-		C53EE1A714DB839A003207CA /* simpleclasses.db in Resources */ = {isa = PBXBuildFile; fileRef = C53EE1A614DB839A003207CA /* simpleclasses.db */; };
 		C53EE1AA14DB83D1003207CA /* DBAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = C53EE1A914DB83D1003207CA /* DBAccess.m */; };
 		C53EE1AC14DB930E003207CA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C53EE1AB14DB930E003207CA /* libsqlite3.dylib */; };
+		C5DD1B8514DC1AEB0077CFBB /* simpleclasses.db in Resources */ = {isa = PBXBuildFile; fileRef = C5DD1B8414DC1AEB0077CFBB /* simpleclasses.db */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,10 +42,10 @@
 		C53EE19614DB7595003207CA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SCDBDetailViewController.xib; sourceTree = "<group>"; };
 		C53EE1A314DB80DB003207CA /* SCDBClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCDBClass.h; sourceTree = "<group>"; };
 		C53EE1A414DB80DB003207CA /* SCDBClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCDBClass.m; sourceTree = "<group>"; };
-		C53EE1A614DB839A003207CA /* simpleclasses.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = simpleclasses.db; sourceTree = "<group>"; };
 		C53EE1A814DB83D1003207CA /* DBAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBAccess.h; sourceTree = "<group>"; };
 		C53EE1A914DB83D1003207CA /* DBAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBAccess.m; sourceTree = "<group>"; };
 		C53EE1AB14DB930E003207CA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		C5DD1B8414DC1AEB0077CFBB /* simpleclasses.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = simpleclasses.db; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,8 +114,8 @@
 		C53EE18114DB7594003207CA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C53EE1A614DB839A003207CA /* simpleclasses.db */,
 				C53EE18214DB7594003207CA /* SimpleClassDB-Info.plist */,
+				C5DD1B8414DC1AEB0077CFBB /* simpleclasses.db */,
 				C53EE18314DB7594003207CA /* InfoPlist.strings */,
 				C53EE18614DB7594003207CA /* main.m */,
 				C53EE18814DB7594003207CA /* SimpleClassDB-Prefix.pch */,
@@ -176,7 +176,7 @@
 				C53EE18514DB7594003207CA /* InfoPlist.strings in Resources */,
 				C53EE19414DB7595003207CA /* SCDBMasterViewController.xib in Resources */,
 				C53EE19714DB7595003207CA /* SCDBDetailViewController.xib in Resources */,
-				C53EE1A714DB839A003207CA /* simpleclasses.db in Resources */,
+				C5DD1B8514DC1AEB0077CFBB /* simpleclasses.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +312,7 @@
 				C53EE19C14DB7595003207CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

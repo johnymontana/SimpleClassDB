@@ -37,12 +37,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
+    self.navigationItem.title = @"Courses";
     DBAccess *dbAccess = [[DBAccess alloc] init];
     
     self.classes = [dbAccess getAllClasses];
     
     [dbAccess closeDatabase];
+    
     
     //[dbAccess release];
     
