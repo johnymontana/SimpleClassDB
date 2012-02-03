@@ -1,0 +1,299 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C53EE17B14DB7594003207CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53EE17A14DB7594003207CA /* UIKit.framework */; };
+		C53EE17D14DB7594003207CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53EE17C14DB7594003207CA /* Foundation.framework */; };
+		C53EE17F14DB7594003207CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C53EE17E14DB7594003207CA /* CoreGraphics.framework */; };
+		C53EE18514DB7594003207CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C53EE18314DB7594003207CA /* InfoPlist.strings */; };
+		C53EE18714DB7594003207CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C53EE18614DB7594003207CA /* main.m */; };
+		C53EE18B14DB7594003207CA /* SCDBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C53EE18A14DB7594003207CA /* SCDBAppDelegate.m */; };
+		C53EE18E14DB7594003207CA /* SCDBMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C53EE18D14DB7594003207CA /* SCDBMasterViewController.m */; };
+		C53EE19114DB7595003207CA /* SCDBDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C53EE19014DB7595003207CA /* SCDBDetailViewController.m */; };
+		C53EE19414DB7595003207CA /* SCDBMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C53EE19214DB7595003207CA /* SCDBMasterViewController.xib */; };
+		C53EE19714DB7595003207CA /* SCDBDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C53EE19514DB7595003207CA /* SCDBDetailViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C53EE17614DB7594003207CA /* SimpleClassDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleClassDB.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C53EE17A14DB7594003207CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C53EE17C14DB7594003207CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C53EE17E14DB7594003207CA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C53EE18214DB7594003207CA /* SimpleClassDB-Info.plist */ = {isa = PBXFileReference; path = "SimpleClassDB-Info.plist"; sourceTree = "<group>"; };
+		C53EE18414DB7594003207CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C53EE18614DB7594003207CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C53EE18814DB7594003207CA /* SimpleClassDB-Prefix.pch */ = {isa = PBXFileReference; path = "SimpleClassDB-Prefix.pch"; sourceTree = "<group>"; };
+		C53EE18914DB7594003207CA /* SCDBAppDelegate.h */ = {isa = PBXFileReference; path = SCDBAppDelegate.h; sourceTree = "<group>"; };
+		C53EE18A14DB7594003207CA /* SCDBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCDBAppDelegate.m; sourceTree = "<group>"; };
+		C53EE18C14DB7594003207CA /* SCDBMasterViewController.h */ = {isa = PBXFileReference; path = SCDBMasterViewController.h; sourceTree = "<group>"; };
+		C53EE18D14DB7594003207CA /* SCDBMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCDBMasterViewController.m; sourceTree = "<group>"; };
+		C53EE18F14DB7594003207CA /* SCDBDetailViewController.h */ = {isa = PBXFileReference; path = SCDBDetailViewController.h; sourceTree = "<group>"; };
+		C53EE19014DB7595003207CA /* SCDBDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCDBDetailViewController.m; sourceTree = "<group>"; };
+		C53EE19314DB7595003207CA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SCDBMasterViewController.xib; sourceTree = "<group>"; };
+		C53EE19614DB7595003207CA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SCDBDetailViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C53EE17314DB7594003207CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C53EE17B14DB7594003207CA /* UIKit.framework in Frameworks */,
+				C53EE17D14DB7594003207CA /* Foundation.framework in Frameworks */,
+				C53EE17F14DB7594003207CA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C53EE16B14DB7594003207CA = {
+			isa = PBXGroup;
+			children = (
+				C53EE18014DB7594003207CA /* SimpleClassDB */,
+				C53EE17914DB7594003207CA /* Frameworks */,
+				C53EE17714DB7594003207CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C53EE17714DB7594003207CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C53EE17614DB7594003207CA /* SimpleClassDB.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C53EE17914DB7594003207CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C53EE17A14DB7594003207CA /* UIKit.framework */,
+				C53EE17C14DB7594003207CA /* Foundation.framework */,
+				C53EE17E14DB7594003207CA /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C53EE18014DB7594003207CA /* SimpleClassDB */ = {
+			isa = PBXGroup;
+			children = (
+				C53EE18914DB7594003207CA /* SCDBAppDelegate.h */,
+				C53EE18A14DB7594003207CA /* SCDBAppDelegate.m */,
+				C53EE18C14DB7594003207CA /* SCDBMasterViewController.h */,
+				C53EE18D14DB7594003207CA /* SCDBMasterViewController.m */,
+				C53EE18F14DB7594003207CA /* SCDBDetailViewController.h */,
+				C53EE19014DB7595003207CA /* SCDBDetailViewController.m */,
+				C53EE19214DB7595003207CA /* SCDBMasterViewController.xib */,
+				C53EE19514DB7595003207CA /* SCDBDetailViewController.xib */,
+				C53EE18114DB7594003207CA /* Supporting Files */,
+			);
+			path = SimpleClassDB;
+			sourceTree = "<group>";
+		};
+		C53EE18114DB7594003207CA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C53EE18214DB7594003207CA /* SimpleClassDB-Info.plist */,
+				C53EE18314DB7594003207CA /* InfoPlist.strings */,
+				C53EE18614DB7594003207CA /* main.m */,
+				C53EE18814DB7594003207CA /* SimpleClassDB-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C53EE17514DB7594003207CA /* SimpleClassDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C53EE19A14DB7595003207CA /* Build configuration list for PBXNativeTarget "SimpleClassDB" */;
+			buildPhases = (
+				C53EE17214DB7594003207CA /* Sources */,
+				C53EE17314DB7594003207CA /* Frameworks */,
+				C53EE17414DB7594003207CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleClassDB;
+			productName = SimpleClassDB;
+			productReference = C53EE17614DB7594003207CA /* SimpleClassDB.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C53EE16D14DB7594003207CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = C53EE17014DB7594003207CA /* Build configuration list for PBXProject "SimpleClassDB" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C53EE16B14DB7594003207CA;
+			productRefGroup = C53EE17714DB7594003207CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C53EE17514DB7594003207CA /* SimpleClassDB */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C53EE17414DB7594003207CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C53EE18514DB7594003207CA /* InfoPlist.strings in Resources */,
+				C53EE19414DB7595003207CA /* SCDBMasterViewController.xib in Resources */,
+				C53EE19714DB7595003207CA /* SCDBDetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C53EE17214DB7594003207CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C53EE18714DB7594003207CA /* main.m in Sources */,
+				C53EE18B14DB7594003207CA /* SCDBAppDelegate.m in Sources */,
+				C53EE18E14DB7594003207CA /* SCDBMasterViewController.m in Sources */,
+				C53EE19114DB7595003207CA /* SCDBDetailViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C53EE18314DB7594003207CA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C53EE18414DB7594003207CA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C53EE19214DB7595003207CA /* SCDBMasterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C53EE19314DB7595003207CA /* en */,
+			);
+			name = SCDBMasterViewController.xib;
+			sourceTree = "<group>";
+		};
+		C53EE19514DB7595003207CA /* SCDBDetailViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C53EE19614DB7595003207CA /* en */,
+			);
+			name = SCDBDetailViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C53EE19814DB7595003207CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C53EE19914DB7595003207CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C53EE19B14DB7595003207CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleClassDB/SimpleClassDB-Prefix.pch";
+				INFOPLIST_FILE = "SimpleClassDB/SimpleClassDB-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C53EE19C14DB7595003207CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleClassDB/SimpleClassDB-Prefix.pch";
+				INFOPLIST_FILE = "SimpleClassDB/SimpleClassDB-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C53EE17014DB7594003207CA /* Build configuration list for PBXProject "SimpleClassDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C53EE19814DB7595003207CA /* Debug */,
+				C53EE19914DB7595003207CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C53EE19A14DB7595003207CA /* Build configuration list for PBXNativeTarget "SimpleClassDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C53EE19B14DB7595003207CA /* Debug */,
+				C53EE19C14DB7595003207CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C53EE16D14DB7594003207CA /* Project object */;
+}
